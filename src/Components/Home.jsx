@@ -1,9 +1,12 @@
 import React from 'react'
+import HeroSection from './HeroSection'
+import Header from './Header'
 
 const Home = () => {
   return (
-    <div>
-        Hello this is home apge
+    <div className='h-[100vh] bg-green-800 w-full'>
+      < Header/>
+      <HeroSection />
     </div>
   )
 }

@@ -4,6 +4,7 @@ import App from './App.jsx';
 import './index.css';
 import Home from './Components/Home.jsx';
 import AboutUs from './Components/AboutUs.jsx';
+import Services from './Components/Services.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: '/about', 
         element: <AboutUs />, 
+      },
+      {
+        path: '/services', 
+        element: <Services />, 
       },
     ],
   },
