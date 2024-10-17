@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import { Outlet } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div>
-      <h1 className='text-3xl'> Hello ., this is jefhly's project </h1>
+      {/* You can render other components here */}
+      <Outlet /> {/* This will render the child route (Home) */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
