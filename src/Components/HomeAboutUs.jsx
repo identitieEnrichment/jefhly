@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeAboutUs = () => {
   return (
-    <div className="px-16 py-6 ">
+    <div className="px-20 py-6 bg-primaryGreen">
       
       <div class="text-white flex justify-between items-center">
         <div>
