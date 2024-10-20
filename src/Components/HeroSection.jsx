@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BiSupport } from "react-icons/bi";
 import { TbReportAnalytics } from "react-icons/tb";
 import { MdOutlineCalendarMonth } from "react-icons/md";
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
+// Make sure the plugin is registered
+gsap.registerPlugin(ScrollToPlugin);
 const HeroSection = () => {
+  const scrollToSection = () => {
+    const section = document.getElementById("sec-2");
+      gsap.to('#HomePage', {
+        scrollTo: { y: section, offsetY: 100 }, 
+        duration: 1.5, 
+        ease: "power2.inOut", // Easing for smooth effect
+      });
+  };
   return (
-    <div className="h-screen bg-[#0B675A] w-full flex flex-col  justify-center text-white px-20">
+    <div className="h-screen bg-[#0B675A] w-full flex flex-col   mt-6 justify-center text-white px-20  ">
       <div className="flex items-center justify-between ">
         <div>
           <div className="text-7xl font-semibold">
             <div className="flex items-center">
               <h1>Love</h1>
-              <img className="size-16 mx-5 " src="../images/smallTeeth.png"></img>
+              <img
+                className="size-16 mx-5 "
+                src="../images/smallTeeth.png"
+              ></img>
               <span>your</span>
             </div>
 
@@ -23,7 +38,7 @@ const HeroSection = () => {
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient.
           </p>
-          <div className="mt-10 flex  space-x-10">
+          <div className="mt-12 flex  space-x-10">
             <div className="flex  items-center space-x-2">
               <div className="bg-[#458B81]  w-fit p-2 rounded-lg text-2xl">
                 {" "}
@@ -48,12 +63,15 @@ const HeroSection = () => {
               <p className="font-medium">Detailed Report</p>
             </div>
           </div>
-          
+          <button onClick={scrollToSection} href="#sec-2" className="flex justify-center mt-12 w-8/12 text-white ">
+            <div class="scroll-down relative h-[50px] w-[30px] border-[3px] border-white hover:border-secondaryOrange rounded-full cursor-pointer"></div>
+          </button>
         </div>
-        <div className="size-[30rem]">
+        <div className="size-[30rem] z-50">
           <img src="../images/BiggTooth.png"></img>
         </div>
       </div>
+      
     </div>
   );
 };

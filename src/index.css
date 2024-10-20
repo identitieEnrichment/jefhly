@@ -2,3 +2,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ @layer utilities {
+
+    .scroll-down::before,
+    .scroll-down::after {
+      content: "";
+      @apply absolute top-[20%] left-[50%] h-[10px] w-[10px] border-2 border-secondaryOrange ;
+      transform: translate(-50%, -100%) rotate(45deg);
+      border-top-color: transparent;
+      border-left-color: transparent;
+      animation: scroll-down 1s ease-in-out infinite;
+    }
+  
+    .scroll-down::before {
+      top: 30%;
+      animation-delay: 0.3s;
+    }
+    .animate-circle {
+      animation: draw-circle 2s forwards;
+    }
+    
+    /* Circle stroke animation */
+   
+
+  }
+  @keyframes draw-circle {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes scroll-down {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      top: 90%;
+      opacity: 0;
+    }
+  } 
