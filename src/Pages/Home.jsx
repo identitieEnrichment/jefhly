@@ -7,6 +7,7 @@ import Lenis from '@studio-freight/lenis'
 import WhyChooseUsHome from '../Components/specific/Home/WhyChooseUsHome'
 import MeetTeam from '../Components/specific/Home/MeetTeam'
 import BookAnAppoinment from '../Components/specific/Home/BookAnAppoinment'
+import Mid from '../Components/specific/Home/Mid'
 
 const Home = () => {
   return (
@@ -16,9 +17,10 @@ const Home = () => {
       < Header/>
       <HeroSection /> 
       <HomeAboutUs/>
-      // <WhyChooseUsHome /> */}
-      {/* // <MeetTeam />  */}
-      <BookAnAppoinment/>
+       <WhyChooseUsHome />
+      <MeetTeam /> 
+      <BookAnAppoinment/> */}
+      <Mid/>
     </div>
   )
 }
