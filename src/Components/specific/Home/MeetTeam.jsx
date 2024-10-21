@@ -1,5 +1,5 @@
 import React from "react";
-import { teamMembers } from "../utils/Constant.js";
+import { teamMembers } from "../../../utils/Constant.js";
 
 const MeetTeam = () => {
   console.log(teamMembers);

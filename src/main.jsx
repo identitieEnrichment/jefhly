@@ -2,31 +2,22 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
-import Home from './Components/Home.jsx';
-import AboutUs from './Components/AboutUs.jsx';
-import Services from './Components/Services.jsx';
+import Home from './Pages/Home.jsx';
+import AboutUs from './Pages/AboutUs.jsx';
+import Services from './Pages/Services.jsx';
+import NotFound from './Pages/NotFound.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-    errorElement: <Home />, // Error handling
-    children: [
-      {
-        path: '/', 
-        element: <Home />, 
-      },
-      {
-        path: '/about', 
-        element: <AboutUs />, 
-      },
-      {
-        path: '/services', 
-        element: <Services />, 
-      },
-    ],
+    path:'/',
+    element:<Home />,
+    errorElement:<NotFound />
   },
-]);
+  {
+    path:'/about',
+    element:<AboutUs />
+  },
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<RouterProvider router={router} />);
