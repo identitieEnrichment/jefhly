@@ -5,6 +5,7 @@ import HomeAboutUs from './HomeAboutUs'
 import Circle from './Circle'
 import Lenis from '@studio-freight/lenis'
 import WhyChooseUsHome from './WhyChooseUsHome'
+import MeetTeam from './MeetTeam'
 
 const Home = () => {
 //   useEffect(() => {
@@ -20,14 +21,14 @@ const Home = () => {
 //     };
 // }, []);
   return (
-    <div  id='HomePage' className=' bg-[#0B675A] w-full font-poppins relative overflow-x-hidden '>
+    <div  id='HomePage' className=' bg-[#0B675A] w-full  font-poppins relative overflow-x-hidden '>
 
       <Circle />
       < Header/>
       <HeroSection /> 
       <HomeAboutUs/>
       <WhyChooseUsHome />
-      <HeroSection /> 
+      {/* <MeetTeam /> */}
     </div>
   )
 }

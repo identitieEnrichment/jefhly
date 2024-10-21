@@ -5,16 +5,20 @@ import { MdOutlineCalendarMonth } from "react-icons/md";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-// Make sure the plugin is registered
+// // Make sure the plugin is registered
 gsap.registerPlugin(ScrollToPlugin);
+
 const HeroSection = () => {
+
   const scrollToSection = () => {
     const section = document.getElementById("sec-2");
-      gsap.to('#HomePage', {
-        scrollTo: { y: section, offsetY: 100 }, 
-        duration: 1.5, 
+    if (section) {
+      gsap.to(window, {
+        scrollTo: { y: section, offsetY: 100 }, // Scroll to the top of the section minus offset
+        duration: .2,
         ease: "power2.inOut", // Easing for smooth effect
       });
+    }
   };
   return (
     <div className="h-screen bg-[#0B675A] w-full flex flex-col   mt-6 justify-center text-white px-20  ">
@@ -63,7 +67,7 @@ const HeroSection = () => {
               <p className="font-medium">Detailed Report</p>
             </div>
           </div>
-          <button onClick={scrollToSection} href="#sec-2" className="flex justify-center mt-12 w-8/12 text-white ">
+          <button onClick={scrollToSection} className="flex justify-center mt-12 w-8/12 text-white ">
             <div class="scroll-down relative h-[50px] w-[30px] border-[3px] border-white hover:border-secondaryOrange rounded-full cursor-pointer"></div>
           </button>
         </div>

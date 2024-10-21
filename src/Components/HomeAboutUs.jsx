@@ -2,22 +2,22 @@ import React from "react";
 import { IoMdArrowBack } from "react-icons/io";
 const HomeAboutUs = () => {
   return (
-    <div className="px-20 py-6 h-screen bg-primaryGreen" id="sec-2">
+    <div id="sec-2" className="px-20 py-6 h-screen bg-primaryGreen" >
       <div class="text-white flex justify-between  ">
         <div className="space-y-10 mt-16">
           <h2 className="text-[#89DB7B] font-semibold text-sm">About Us</h2>
           <span className="text-5xl font-semibold ">Patient-Centered Care</span>
-          <p className="text-gray-300 text-sm max-w-xl opacity-70 ">
+          <p className="text-gray-300  max-w-xl opacity-70 ">
             We are dedicated to providing exceptional dental care in a warm and
             welcoming environment. Our team of experienced, compassionate, and
             highly skilled professionals is here to ensure your dental
             experience is comfortable and stress-free.
           </p>
           <div>
-            <h3 className="text-white text-sm font-semibold opacity-100">
+            <h3 className="text-white  font-semibold opacity-100">
               Our mission
             </h3>
-            <p className="text-gray-300 text-sm max-w-xl mt-1 opacity-70">
+            <p className="text-gray-300  max-w-xl mt-1 opacity-70">
               At JEFHLY,our mission is to promote optimal oral health and create
               lasting,confident smiles
             </p>

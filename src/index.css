@@ -2,8 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- @layer utilities {
-
+@layer utilities {
+   
     .scroll-down::before,
     .scroll-down::after {
       content: "";
@@ -18,18 +18,7 @@
       top: 30%;
       animation-delay: 0.3s;
     }
-    .animate-circle {
-      animation: draw-circle 2s forwards;
-    }
-    
-    /* Circle stroke animation */
-   
 
-  }
-  @keyframes draw-circle {
-    to {
-      stroke-dashoffset: 0;
-    }
   }
   
   @keyframes scroll-down {
@@ -46,4 +35,4 @@
       top: 90%;
       opacity: 0;
     }
-  } 
+  }
