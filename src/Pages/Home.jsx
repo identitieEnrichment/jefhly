@@ -6,19 +6,25 @@ import Circle from '../Components/common/Circle'
 import Lenis from '@studio-freight/lenis'
 import WhyChooseUsHome from '../Components/specific/Home/WhyChooseUsHome'
 import MeetTeam from '../Components/specific/Home/MeetTeam'
+
+import WhatWeDo from '../Components/specific/Home/WhatWeDo'
+import Testimonials from '../Components/specific/Home/Testimonials'
 import BookAnAppoinment from '../Components/specific/Home/BookAnAppoinment'
 import Footer from '../Components/layout/Footer'
+
+import Mid from '../Components/specific/Home/Mid'
+
+
 
 const Home = () => {
   return (
     <div  id='HomePage' className=' bg-[#0B675A] w-full  font-poppins relative overflow-x-hidden '>
 
-       <Circle />
-      < Header/>
+      <Circle />
       <HeroSection /> 
       <HomeAboutUs/>
-       <WhyChooseUsHome /> 
-       <MeetTeam /> 
+      <WhyChooseUsHome />
+      <WhatWeDo />
       <BookAnAppoinment/>
       <Footer/>
       
