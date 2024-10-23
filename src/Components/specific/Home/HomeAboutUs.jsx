@@ -2,7 +2,7 @@ import React from "react";
 import { IoMdArrowBack } from "react-icons/io";
 const HomeAboutUs = () => {
   return (
-    <div id="sec-2" className="px-20 py-6 h-screen bg-primaryGreen" >
+    <div id="sec-2" className="px-20 py-6 h-[80vh] bg-primaryGreen" >
       <div class="text-white flex justify-between  ">
         <div className="space-y-10 mt-16">
           <h2 className="text-[#89DB7B] font-semibold text-sm">About Us</h2>

@@ -16,7 +16,7 @@ const HeroSection = () => {
       gsap.to(window, {
         scrollTo: { y: section, offsetY: 100 }, // Scroll to the top of the section minus offset
         duration: .2,
-        ease: "power2.inOut", // Easing for smooth effect
+        ease: "power2.inOut", 
       });
     }
   };

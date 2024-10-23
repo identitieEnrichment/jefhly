@@ -63,3 +63,155 @@ export const whyChooseUsData = [
   }
 ];
 
+export const sliderData = [
+  {
+    title: "General Dentistry",
+    services: [
+      "Routine Check-up",
+      "Dental X-Ray",
+      "Professional Cleaning",
+      "Tooth Extractions",
+      "Filling and Sealant",
+      "Oral Cancer Screening"
+    ],
+    image: "../images/clinic.jpg",
+    initialText: "Cosmetic Dentistry"
+  },
+  {
+    title: "Orthodontics",
+    services: ["Braces", "Aligners", "Retainers"],
+    image: "../images/clinic2.jpg",
+    initialText: "Orthodontics"
+  },
+  {
+    title: "Pediatric Dentistry",
+    services: [
+      "Child Oral Care",
+      "Dental Sealants",
+      "Fluoride Treatment",
+      "Cavity Prevention"
+    ],
+    image: "../images/clinic3.jpg",
+    initialText: "Pediatric Care"
+  },
+  {
+    title: "Cosmetic Dentistry",
+    services: [
+      "Teeth Whitening",
+      "Veneers",
+      "Cosmetic Bonding",
+      "Smile Makeover"
+    ],
+    image: "../images/clinic4.jpg",
+    initialText: "Cosmetic Solutions"
+  },
+  {
+    title: "Oral Surgery",
+    services: [
+      "Wisdom Tooth Extraction",
+      "Dental Implants",
+      "Gum Surgery",
+      "Bone Grafting"
+    ],
+    image: "../images/clinic5.jpg",
+    initialText: "Surgical Procedures"
+  },
+  {
+    title: "Prosthodontics",
+    services: [
+      "Crowns and Bridges",
+      "Full Dentures",
+      "Partial Dentures",
+      "Dental Implants"
+    ],
+    image: "../images/clinic6.jpg",
+    initialText: "Prosthodontics"
+  },
+  {
+    title: "Endodontics",
+    services: [
+      "Root Canal Treatment",
+      "Retreatment",
+      "Pulp Therapy",
+      "Apexification"
+    ],
+    image: "../images/clinic7.jpg",
+    initialText: "Endodontics"
+  },
+  {
+    title: "Periodontics",
+    services: [
+      "Gum Disease Treatment",
+      "Scaling and Root Planing",
+      "Laser Therapy",
+      "Gum Graft Surgery"
+    ],
+    image: "../images/clinic8.jpg",
+    initialText: "Periodontal Care"
+  },
+  {
+    title: "Oral Radiology",
+    services: [
+      "3D Imaging",
+      "Digital X-Ray",
+      "Panoramic X-Ray",
+      "CT Scans"
+    ],
+    image: "../images/clinic9.jpg",
+    initialText: "Radiology Services"
+  },
+  
+];
+
+export const testimonialsData = [
+  {
+    review: "The clinic was so clean, and the staff was extremely kind and professional. I had a severe toothache, and the doctor handled it with great care. Now, I can smile confidently again. Thank you, doctor!",
+    name: "Michael Brown",
+    occupation: "Software Engineer",
+  },
+  {
+    review: "I was really anxious about getting a root canal, but the dentist made me feel at ease. The procedure was painless, and I’m really satisfied with the result. Highly recommend this clinic!",
+    name: "Sarah Miller",
+    occupation: "Graphic Designer",
+  },
+  {
+    review: "The atmosphere in the clinic is so calming. I went in for teeth whitening, and the results were incredible. My teeth are sparkling now, and I couldn't be happier. The team is amazing!",
+    name: "Emily Davis",
+    occupation: "Marketing Specialist",
+  },
+  {
+    review: "My experience here was exceptional. I had braces fitted and the entire process was smooth. The dentist explained every step in detail. My teeth look perfect now!",
+    name: "John Smith",
+    occupation: "Financial Consultant",
+  },
+  {
+    review: "I was suffering from a bleeding gum problem, and the doctor provided me with the right treatment. After a few visits, my gums are healthier than ever. Fantastic service!",
+    name: "Olivia Martinez",
+    occupation: "Teacher",
+  },
+  {
+    review: "From the moment I walked in, I felt comfortable. The dentist was very caring and helped me overcome my dental anxiety. I had a tooth extraction, and the healing was smooth. I’m very thankful.",
+    name: "David Johnson",
+    occupation: "Entrepreneur",
+  },
+  {
+    review: "The best dental clinic I’ve been to. I got my teeth straightened here, and the results are beyond my expectations. The clinic is very neat, and the dentist was so kind. Thank you for everything!",
+    name: "Sophia Lee",
+    occupation: "Photographer",
+  },
+  {
+    review: "I had gum disease, and after multiple treatments at this clinic, my gums are healthy again. The doctor was extremely gentle and professional. I’m grateful for the excellent care.",
+    name: "James Anderson",
+    occupation: "Real Estate Agent",
+  },
+  {
+    review: "The team here is top-notch! I went in for a routine checkup and cleaning, and they did a fantastic job. The dentist was very thorough and explained everything clearly. Highly recommend!",
+    name: "Linda Thompson",
+    occupation: "HR Manager",
+  },
+  {
+    review: "I got dental implants here, and the whole process was smooth and painless. The doctor was very attentive and answered all my questions. I’m so happy with my new smile!",
+    name: "Daniel Wilson",
+    occupation: "Architect",
+  },
+];
