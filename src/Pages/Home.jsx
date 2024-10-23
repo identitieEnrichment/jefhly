@@ -10,6 +10,7 @@ import MeetTeam from '../Components/specific/Home/MeetTeam'
 import WhatWeDo from '../Components/specific/Home/WhatWeDo'
 import Testimonials from '../Components/specific/Home/Testimonials'
 import BookAnAppoinment from '../Components/specific/Home/BookAnAppoinment'
+import Mid from '../Components/specific/Home/Mid'
 
 
 const Home = () => {
