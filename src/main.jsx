@@ -10,13 +10,24 @@ import NotFound from './Pages/NotFound.jsx';
 const router = createBrowserRouter([
   {
     path:'/',
-    element:<Home />,
+    element:<App />,
+    children:[
+      {
+        path:'/',
+        element:<Home />
+      },
+      {
+        path:'/about',
+        element:<AboutUs />
+      },
+      {
+        path:'/services',
+        element:<Services />
+      },
+    ],
     errorElement:<NotFound />
   },
-  {
-    path:'/about',
-    element:<AboutUs />
-  },
+ 
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

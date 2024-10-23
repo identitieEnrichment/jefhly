@@ -18,7 +18,7 @@ const WhyChooseUsHome = () => {
     // Create a single ScrollTrigger for both pinning and animation
     const scrollTrigger = ScrollTrigger.create({
       trigger: container,
-      start: "top 25%", // Start when the container reaches the top of the viewport
+      start: "top 10%", // Start when the container reaches the top of the viewport
       end:"bottom bottom", // End when the container's bottom reaches the bottom of the viewport
       pin: leftPart, // Pin the left part
       pinSpacing: false, // Prevent adding additional space when pinning
@@ -50,7 +50,7 @@ const WhyChooseUsHome = () => {
         <div
           ref={leftPartRef}
           id="whyChooseUsLeftPart"
-          className="bg-[#E7F0EF] w-1/2 px-20 justify-center h-[115vh]  -translate-y-48 sticky top-0 flex flex-col"
+          className="bg-[#E7F0EF] w-1/2 px-20 justify-center h-[90vh]  sticky top-0 flex flex-col"
         >
           <div className="absolute -right-[9rem]">
             <div className="relative size- overflow-hidden flex justify-center items-center">
