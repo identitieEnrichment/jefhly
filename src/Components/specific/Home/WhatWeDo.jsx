@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useEffect, useRef } from "react";
 import { sliderData } from "../../../utils/Constant";
+import Mid from "./Mid";
 gsap.registerPlugin(ScrollToPlugin);
 const WhatWeDo = () => {
   const containerRef = useRef(null);
@@ -125,34 +126,10 @@ const WhatWeDo = () => {
           
 
 
-          {/* <div className="h-96 w-1/12 relative ">
-            <div className="text-black z-50 absolute text-white flex flex-col justify-end w-full h-full px-2 py-4 hidden ">
-              <h1 className="font-semibold text-xl my-2">General Dentristry</h1>
-
-              <div className="space-y-1 text-sm text-gray-200">
-                <p>Routine Check-up</p>
-                <p>Dental X-Ray</p>
-                <p>Professional Cleaning</p>
-                <p>Tooth Extractions</p>
-                <p>Filling and Sealant</p>
-                <p>Oral Cancer Screening</p>
-              </div>
-            </div>
-            <div className=" absolute inset-0 w-full h-full flex py-16 flex-col justify-end bg-red-900 rounded-xl ">
-              <h2 className=" text-white z-50  whitespace-nowrap  font-bold text-xl -rotate-90 ">
-                Cosmetic Dentrisry
-              </h2>
-            </div>
-
-            <img
-              className="h-full w-full rounded-xl absolute inset-0 opacity-100  object-cover"
-              src="../images/clinic.jpg"
-              alt=""
-            />
-            <div className="w-full h-full inset-0 absolute bg-black  rounded-xl opacity-70"></div>
-          </div> */}
+         
         </div>
       </div>
+      <Mid />
     </div>
   );
 };

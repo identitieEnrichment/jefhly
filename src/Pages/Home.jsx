@@ -21,6 +21,8 @@ const Home = () => {
       <HomeAboutUs/>
       <WhyChooseUsHome />
       <WhatWeDo />
+      <Testimonials />
+      <MeetTeam />
       <BookAnAppoinment/>
     </div>
   )

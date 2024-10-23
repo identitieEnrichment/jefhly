@@ -1,61 +1,65 @@
-import React from 'react'
-import { TbDental } from "react-icons/tb";
-import { FaPlus } from "react-icons/fa";
-import { GiHospital } from "react-icons/gi";
-import { FaUserDoctor } from "react-icons/fa6";
-import { FaCalendarAlt } from "react-icons/fa";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { StatisticsData } from "../../../utils/Constant";
 
+gsap.registerPlugin(ScrollTrigger);
 
 const Mid = () => {
+  const statsRef = useRef([]);
+
+  useEffect(() => {
+    const stats = statsRef.current;
+
+    stats.forEach((stat, index) => {
+      const finalValue = parseInt(stat.getAttribute("data-target"), 10); 
+      const midValue = Math.floor(finalValue / 2); 
+      gsap.fromTo(stat, 
+        { innerText: midValue },  
+        {
+          innerText: finalValue,
+          duration: 1,  
+          scrollTrigger: {
+            trigger: stat,  
+            start: "top 90%", 
+            toggleActions: "play none none none", 
+          },
+          snap: { innerText: 1 }, // Ensure numbers are rounded
+          ease: "power1.inOut",
+          onUpdate: function () {
+            stat.innerText = Math.floor(stat.innerText); // Ensure the number is rounded
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
-    <div className='flex justify-between items-center bg-[#E7F0EF] gap-10 p-5'>
-      
-      <div className='flex flex-col justify-center items-center ml-64'>
-        <div className='flex items-center'>
-          <div className='bg-[#0B675A] p-3 rounded-sm'>
-            <TbDental className='text-white size-9'/>
+    <div className="flex justify-center space-x-16 px-20">
+      {StatisticsData.map((item, index) => (
+        <div className="flex space-x-5 items-center" key={index}>
+          <div className="bg-primaryGreen w-fit p-2">
+            <item.icon className="text-white size-9" />
           </div>
-          <span className='ml-3 font-extrabold '>1,200 </span>
-          <FaPlus className='text-[#0B675A] ml-2'/>
-        </div>
-        <p className='mt-2 text-center'>Happy client</p>
-      </div>
-      
-      <div className='flex flex-col justify-center items-center'>
-        <div className='flex items-center'>
-          <div className='bg-[#0B675A] p-3 rounded-sm'>
-            <GiHospital className='text-white size-9'/>
+          <div>
+            <div className="flex items-center space-x-2">
+            <h1
+              className="text-4xl font-black"
+              ref={(el) => (statsRef.current[index] = el)} 
+              data-target={item.count} 
+            >
+              0
+            </h1>
+            <span className="text-primaryGreen text-4xl font-black">+</span>
+            </div>
+           
+            
+            <p className="text-[#666666] text-sm">{item.title}</p>
           </div>
-          <span className='ml-3 font-extrabold '>15 </span>
-          <FaPlus className='text-[#0B675A] ml-2'/>
         </div>
-        <p className='mt-2 text-center'>Year experience</p>
-      </div>
-
-      <div className='flex flex-col justify-center items-center'>
-        <div className='flex items-center'>
-          <div className='bg-[#0B675A] p-3 rounded-sm'>
-            <FaUserDoctor className='text-white size-9'/>
-          </div>
-          <span className='ml-3 font-extrabold '>70 </span>
-          <FaPlus className='text-[#0B675A] ml-2'/>
-        </div>
-        <p className='mt-2 text-center'>Doctor & Staff</p>
-      </div>
-
-      <div className='flex flex-col justify-center items-center mr-64'>
-        <div className='flex items-center'>
-          <div className='bg-[#0B675A] p-3 rounded-sm'>
-            <FaCalendarAlt className='text-white size-9'/>
-          </div>
-          <span className='ml-3 font-extrabold '>340 </span>
-          <FaPlus className='text-[#0B675A] ml-2'/>
-        </div>
-        <p className='mt-2 text-center'>Online Appointment</p>
-      </div>
-      
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Mid
+export default Mid;

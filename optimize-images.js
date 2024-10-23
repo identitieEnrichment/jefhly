@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Source and destination folders
-const sourceFolder = path.join(__dirname, 'public', 'images');
+const sourceFolder = path.join(__dirname, 'public', 'toOptimize');
 const destinationFolder = path.join(__dirname, 'public', 'images', 'optimized');
 
 // Ensure the destination folder exists
