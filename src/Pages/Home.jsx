@@ -7,18 +7,21 @@ import Lenis from '@studio-freight/lenis'
 import WhyChooseUsHome from '../Components/specific/Home/WhyChooseUsHome'
 import MeetTeam from '../Components/specific/Home/MeetTeam'
 import BookAnAppoinment from '../Components/specific/Home/BookAnAppoinment'
+import Footer from '../Components/layout/Footer'
 
 const Home = () => {
   return (
     <div  id='HomePage' className=' bg-[#0B675A] w-full  font-poppins relative overflow-x-hidden '>
 
-       {/* <Circle />
+       <Circle />
       < Header/>
       <HeroSection /> 
       <HomeAboutUs/>
-      // <WhyChooseUsHome /> */}
-      {/* // <MeetTeam />  */}
+       <WhyChooseUsHome /> 
+       <MeetTeam /> 
       <BookAnAppoinment/>
+      <Footer/>
+      
     </div>
   )
 }
