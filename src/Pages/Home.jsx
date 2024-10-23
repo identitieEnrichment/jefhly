@@ -25,6 +25,8 @@ const Home = () => {
       <HomeAboutUs/>
       <WhyChooseUsHome />
       <WhatWeDo />
+      <Testimonials />
+      <MeetTeam />
       <BookAnAppoinment/>
       <Footer/>
       

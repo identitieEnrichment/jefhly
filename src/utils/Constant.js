@@ -1,33 +1,37 @@
+import { TbDental } from "react-icons/tb";
+import { GiHospital } from "react-icons/gi";
+import { FaUserDoctor } from "react-icons/fa6";
+import { FaCalendarAlt } from "react-icons/fa";
 export const teamMembers = [
   {
     name: 'DR.JEFHLY',
     title: 'Chief Dental Surgeon',
-    imgSrc: 'https://img.freepik.com/free-photo/dentist-with-smile_144627-886.jpg',
+    imgSrc: '../images/avatar1.jpg',
   },
   {
     name: 'DR.BENIN',
     title: 'General Physician',
-    imgSrc: 'https://img.freepik.com/free-photo/dentist-with-smile_144627-886.jpg',
+    imgSrc: '../images/avatat2.jpg',
   },
   {
     name: 'DR.AISWARYA',
     title: 'Oral And Maxillofacial Surgeon And Implantologist',
-    imgSrc: 'https://img.freepik.com/free-photo/dentist-with-smile_144627-886.jpg',
+    imgSrc: '../images/avatar3.jpg',
   },
   {
     name: 'DR.AASHIQUE',
     title: 'Prosthodontist',
-    imgSrc: 'https://img.freepik.com/free-photo/dentist-with-smile_144627-886.jpg',
+    imgSrc: '../images/avatar4.jpg',
   },
   {
     name: 'DR.RAMEEEZ',
     title: 'Endodontist',
-    imgSrc: 'https://img.freepik.com/free-photo/dentist-with-smile_144627-886.jpg',
+    imgSrc: '../images/avatar5.jpg',
   },
   {
     name: 'DR.NOBLIN',
     title: 'Periodontist',
-    imgSrc: 'https://img.freepik.com/free-photo/dentist-with-smile_144627-886.jpg',
+    imgSrc: '../images/avatar6.jpg',
   },
 ];
 export const whyChooseUsData = [
@@ -214,4 +218,29 @@ export const testimonialsData = [
     name: "Daniel Wilson",
     occupation: "Architect",
   },
+
+
 ];
+
+export const  StatisticsData = [
+  {
+    title:'Happy Clients',
+    icon : TbDental,
+    count: 1200
+  },
+  {
+    title:'Year Experience',
+    icon : GiHospital,
+    count: 15
+  },
+  {
+    title:'Doctors&Staff',
+    icon : FaUserDoctor,
+    count: 70
+  },
+  {
+    title:'Online Appointment&Staff',
+    icon : FaCalendarAlt,
+    count: 340
+  }
+]
