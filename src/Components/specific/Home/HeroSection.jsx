@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 const HeroSection = () => {
 
-  const scrollToSection = () => {
+  const scrollToSection = () => {scrollToSection
     const section = document.getElementById("sec-2");
     if (section) {
       gsap.to(window, {

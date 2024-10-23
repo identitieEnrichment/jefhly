@@ -92,6 +92,7 @@ const WhatWeDo = () => {
     <div
       ref={containerRef}
       className=" w-full -mt-1 bg-gradient-to-b from-[#E7F0EF] to-[#DAE8E6] py-16 "
+      id="OurServices"
     >
       <div>
         <h1 className="text-black text-5xl font-bold flex justify-center">

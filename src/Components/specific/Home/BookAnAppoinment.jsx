@@ -2,7 +2,7 @@ import React from "react";
 import { IoMdArrowBack } from "react-icons/io";
 const BookAnAppointment = () => {
   return (
-    <div className="flex flex-col px-20 justify-center items-center  p-8 bg-white ">
+    <div className="flex flex-col px-20  py-20 justify-center items-center  p-8 bg-white " id="AppoinMentSection">
       <div className=" bg-white  lg:w-9/12 p-0 rounded-xl drop-shadow-xl shadow-xl border-t-[.2px] border-t-gray-200  flex flex-col lg:flex-row">
         <div className="w-full lg:w-5/12">
           <img

@@ -28,8 +28,6 @@ const Home = () => {
       <Testimonials />
       <MeetTeam />
       <BookAnAppoinment/>
-      <Footer/>
-      
     </div>
   )
 }

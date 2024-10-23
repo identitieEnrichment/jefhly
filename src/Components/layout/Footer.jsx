@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
         
         <div className="mb-8 md:mb-0 ml-20">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3Sa8MMQQkTEkSchYzvcuniWCZJILKj-v2g&s" alt="Company Logo" className="w-32 mb-4" />
+          <img src="../images/logo.png" alt="Company Logo" className="w-32 mb-4 text-white" />
           <p className="text-gray-400">
             Jefhly Smile Hub No 1,2nd East<br />
             Street,Kamarajar Nagar,<br/>
