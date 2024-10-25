@@ -22,12 +22,12 @@ const NotFound = () => {
 						</div>
 					</div>
 					<div>
-						<img src="../images/404.png" alt="empty" />
+						<img className="object-contain" src="../images/404.png" alt="empty" />
 					</div>
 				</div>
 			</div>
-			<div>
-				<img src="../images/Group.png" alt="empty"/>
+			<div className="">
+				<img className="object-contain" src="../images/Group.png" alt="empty"/>
 			</div>
 		</div>
 	);

@@ -29,7 +29,7 @@ const MeetTeam = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-[#0B675A] to-white px-20 py-6 MeetTeamContainer  ">
+    <div className="bg-gradient-to-b from-[#0B675A] to-white lg:px-20 px-4 py-6 MeetTeamContainer  ">
       <div className="flex items-center space-x-2 drop-shadow-xl">
         <div className="size-2 rounded-full bg-[#BEF264]"></div>
         <h3 className="text-white text-sm ml-24">Our experts</h3>
@@ -37,9 +37,9 @@ const MeetTeam = () => {
       <div>
         <h1 className="text-2xl text-white my-4">Meet Our Team</h1>
       </div>
-      <div className="grid grid-cols-3 gap-x-14 gap-y-7   ">
+      <div className="grid lg:grid-cols-3 gap-4 grid-cols-2 lg:gap-x-14 lg:gap-y-7   ">
         {teamMembers.map((teamMember) => (
-          <div className="rounded-md bg-[#E7F0EF] h-64 min-w-96 flex flex-col items-center justify-center space-y-3 Card ">
+          <div className="rounded-md bg-[#E7F0EF] h-64 w-full lg:min-w-96 flex flex-col items-center justify-center space-y-3 Card ">
             <img
               className=" size-28 rounded-full object-cover "
               src={teamMember.imgSrc}
