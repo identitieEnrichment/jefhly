@@ -2,13 +2,13 @@ import React from "react";
 import { IoMdArrowBack } from "react-icons/io";
 const BookAnAppointment = () => {
   return (
-    <div className="flex flex-col px-20  py-20 justify-center items-center  p-8 bg-white " id="AppoinMentSection">
+    <div className="flex flex-col lg:px-20  py-10 lg:py-20 justify-center items-center  p-4 bg-white " id="AppoinMentSection">
       <div className=" bg-white  lg:w-9/12 p-0 rounded-xl drop-shadow-xl shadow-xl border-t-[.2px] border-t-gray-200  flex flex-col lg:flex-row">
         <div className="w-full lg:w-5/12">
           <img
             src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Hospital"
-            className="w-full h-full object-cover rounded-l-2xl"
+            className="w-full h-full object-cover rounded-t-2xl"
           />
         </div>
 
@@ -53,7 +53,7 @@ const BookAnAppointment = () => {
           </div>
 
           <div className="mt-10 text-center">
-          <button className="rounded-full w-full text-center  justify-center  group hover:bg-[#e2842e] hover:text-gray-100  bg-secondaryOrange px-6 py-3 font-semibold text-white opacity-100 flex items-center space-x-2">
+          <button className="rounded-full text-sm lg:text-base w-full text-center  justify-center  group hover:bg-[#e2842e] hover:text-gray-100  bg-secondaryOrange px-6 py-3 font-semibold text-white opacity-100 flex items-center space-x-2">
                 <span>Get a Free Consultation</span>
                 <div className=" rotate-180 group-hover:rotate-90 transition-all duration-75 ">
                   <IoMdArrowBack className="text-xl font-bold  rotate-45"/>

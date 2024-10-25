@@ -59,14 +59,14 @@ const Testimonials = () => {
   return (
     <div className="">
       <div className="text-white py-20">
-        <h1 className="flex justify-center text-5xl">What our Customers Say</h1>
-        <p className="flex justify-center text-gray-200 my-2 mb-6">
+        <h1 className="flex justify-center text-3xl lg:text-left text-center lg:text-5xl">What our Customers Say</h1>
+        <p className="flex justify-center text-gray-200 text-center lg:text-left text-sm my-2 mb-6">
           Thousands of happy customers that changed their energy use{" "}
         </p>
         <div className="flex justify-center  mt-20 ">
-          <div className="w-7/12 h-96 relative  ">
-            <div className="h-[80%] w-[110%] bg-white opacity-60 z-0 rounded-lg absolute -right-10 top-8 nextElement "></div>
-            <div className="bg-white w-full absolute inset-0 h-full text-black rounded-xl py-5 px-10 flex flex-col justify-center  space-y-3 ActualElement  ">
+          <div className="lg:w-7/12 w-9/12 lg:h-96 h-[28rem]  relative  ">
+            <div className="lg:h-[80%] lg:w-[110%] h-[90%] w-[120%] top-6 -left-7 bg-white opacity-60 z-0 rounded-lg absolute right-1  lg:-right-10 lg:top-8 nextElement "></div>
+            <div className="bg-white overflow-auto w-full absolute inset-0 h-full text-black rounded-xl py-5 px-2 lg:px-10 flex flex-col justify-center  space-y-3 ActualElement  ">
               <div className="flex flex-col items-center justify-center actualElementData">
                 <div className="flex justify-cente text-green-500">
                   <FaStar />

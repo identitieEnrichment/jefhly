@@ -26,9 +26,9 @@ const HeroSection = () => {
         <div className="size-48 flex justify-center z-50 lg:hidden  w-full">
           <img className="size-28" src="../images/BiggTooth.png"></img>
         </div>
-        <div>
-          <div className="lg:text-7xl text-5xl font-semibold">
-            <div className="flex items-center">
+        <div className="flex flex-col lg:block items-center justify-center lg:text-left text-center z-50">
+          <div className="lg:text-7xl text-5xl   font-semibold">
+            <div className="flex  items-center">
               <h1>Love</h1>
               <img
                 className="lg:size-16 size-12 mx-5 "
@@ -45,7 +45,7 @@ const HeroSection = () => {
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient.
           </p>
-          <div className="mt-12 flex  lg:space-x-10 text-sm lg:text-base">
+          <div className="mt-12 flex  lg:space-x-10 space-x-4 text-sm lg:text-base">
             <div className="flex flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
               <div className="bg-[#458B81]  w-fit p-2 rounded-lg text-2xl">
                 {" "}
