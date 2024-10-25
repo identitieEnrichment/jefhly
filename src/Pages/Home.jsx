@@ -13,6 +13,7 @@ import BookAnAppoinment from '../Components/specific/Home/BookAnAppoinment'
 import Footer from '../Components/layout/Footer'
 
 import Mid from '../Components/specific/Home/Mid'
+import ContactUs from './ContactUs'
 
 
 
@@ -20,14 +21,15 @@ const Home = () => {
   return (
     <div  id='HomePage' className=' bg-[#0B675A] w-full  font-poppins relative overflow-x-hidden '>
 
-      <Circle />
+      {/* <Circle />
       <HeroSection /> 
       <HomeAboutUs/>
       <WhyChooseUsHome />
       <WhatWeDo />
       <Testimonials />
       <MeetTeam />
-      <BookAnAppoinment/>
+      <BookAnAppoinment/> */}
+      <ContactUs/>
     </div>
   )
 }
