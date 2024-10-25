@@ -5,52 +5,147 @@ import { whyChooseUsData } from "../../../utils/Constant";
 gsap.registerPlugin(ScrollTrigger);
 
 const WhyChooseUsHome = () => {
-  const circleRef = useRef(null);
+  const circleDesktopRef = useRef(null);
+  const circleMobileRef = useRef(null);
   const containerRef = useRef(null);
-
   const leftPartRef = useRef(null);
+  const cardsRef = useRef([]);
 
   useEffect(() => {
     const container = containerRef.current;
     const leftPart = leftPartRef.current;
-    const circle = circleRef.current;
+    const circleDesktop = circleDesktopRef.current;
+    const circleMobile = circleMobileRef.current;
 
-    // Create a single ScrollTrigger for both pinning and animation
-    const scrollTrigger = ScrollTrigger.create({
+    // ScrollTrigger for pinning the left part (Desktop)
+
+    const scrollTriggerDesktop = ScrollTrigger.create({
       trigger: container,
-      start: "top 10%", // Start when the container reaches the top of the viewport
-      end:"bottom bottom", // End when the container's bottom reaches the bottom of the viewport
-      pin: leftPart, // Pin the left part
-      pinSpacing: false, // Prevent adding additional space when pinning
+      start: "top 10%",
+      end: "bottom bottom",
+      pin: leftPart,
+      pinSpacing: false,
       scrub: true,
     });
-
-    // Animate strokeDashoffset from 100 to 0 based on scroll position
-    gsap.to(circle, {
-      strokeDashoffset: 0,
+    gsap.from(cardsRef.current, {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
       scrollTrigger: {
         trigger: container,
-        start: "top 10%", // Start when the container reaches the top of the viewport
-        end: () => `bottom bottom`, // End when the container's bottom reaches the bottom of the viewport
-        scrub: 1, // Smoothly animate the changes
+        start: "top top%", // Trigger animation when the container is slightly in view
+        end: "bottom top", 
+        markers:true,// End as container scrolls out of view
+        scrub: 0.5,
       },
     });
+    if(window.innerWidth < 1024){
+      const mobileCircleTrigger = ScrollTrigger.create({
+        trigger: container,
+        start: "top center", // When WhyChooseUsHome enters the viewport
+        end: "bottom bottom", // When WhyChooseUsHome leaves the viewport
+        onEnter: () => gsap.to('.MobileCircle', { opacity: 1, display: 'block' }), // Show MobileCircle
+        onLeave: () => gsap.to('.MobileCircle', { opacity: 0, display: 'none' }), // Hide MobileCircle
+        onEnterBack: () => gsap.to('.MobileCircle', { opacity: 1, display: 'block' }), // Show MobileCircle when scrolling back up
+        onLeaveBack: () => gsap.to('.MobileCircle', { opacity: 0, display: 'none' }), // Hide MobileCircle when scrolling back up
+      });
+    }
+    
+    // Animate both desktop and mobile circles
+    const animateCircle = (circle) => {
+      gsap.to(circle, {
+        strokeDashoffset: 0,
+        scrollTrigger: {
+          trigger: container,
+          start: "top 10%", // Start when the container reaches the top of the viewport
+          end: "bottom bottom", // End when the container's bottom reaches the bottom of the viewport
+          scrub: 1, // Smoothly animate the changes
+        },
+      });
+    };
+    cardsRef.current.forEach((card, index) => {
+      gsap.from(
+        card,
+        { opacity: 0, y: 50 
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 90%", // Trigger when the card is near the viewport
+            end: "top 70%",
+            scrub: 0.5,
+            toggleActions: "play none none reverse",
+            once: true, // Only trigger once
+          },
+          duration: 1,
+          delay: index * 0.2, // Delay for staggered effect
+        }
+      );
+    });
+
+
+    // Apply the same animation to both circles
+    if (circleDesktop) animateCircle(circleDesktop);
+    if (circleMobile) animateCircle(circleMobile);
 
     return () => {
-      scrollTrigger.kill(); // Cleanup ScrollTrigger when component unmounts
+      scrollTriggerDesktop.kill();
+      mobileCircleTrigger.kill(); // Cleanup mobile scroll trigger
     };
   }, []);
   return (
     <div
       ref={containerRef}
       id="whyChooseUsContainer"
-      className="bg-red- w-full h-fit relative"
+      className=" w-full h-fit   relative "
     >
+        <div className="fixed bottom-3 right-3 hidden  z-50 MobileCircle  lg:hidden">
+            <div className="relative size-28 overflow-hidden flex justify-center items-center">
+              <img
+                className="absolute size-12 object-contain max-h-full z-50"
+                src="../images/logo.png"
+                alt=""
+              />
+
+              <svg
+                className="size-full -rotate-90"
+                viewBox="0 0 36 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="18"
+                  cy="18"
+                  r="16"
+                  fill="#E7F0EF"
+                  className="stroke-current text-gray-300"
+                  strokeWidth="2"
+                ></circle>
+                <circle
+                  ref={circleMobileRef}
+                  cx="18"
+                  cy="18"
+                  r="16"
+                  fill="none"
+                  className="stroke-current text-primaryGreen CircleClass"
+                  strokeWidth="2"
+                  strokeDasharray="100"
+                  strokeDashoffset="100"
+                  strokeLinecap="round"
+                ></circle>
+              </svg>
+            </div>
+          </div>
+      <h1 className="text-3xl text-secondaryOrange flex justify-center px-4 lg:hidden  text-center font-bold">
+              Why Choose us for your smile
+            </h1>
       <div className="flex w-full h-full relative">
+        
         <div
           ref={leftPartRef}
           id="whyChooseUsLeftPart"
-          className="bg-[#E7F0EF] w-1/2 px-20 justify-center h-[90vh]  sticky top-0 flex flex-col"
+          className="bg-[#E7F0EF] hidden lg:flex w-1/2 lg:px-20 justify-center h-[90vh]  sticky top-0  flex-col"
         >
           <div className="absolute -right-[9rem]">
             <div className="relative size- overflow-hidden flex justify-center items-center">
@@ -74,12 +169,12 @@ const WhyChooseUsHome = () => {
                   strokeWidth="2"
                 ></circle>
                 <circle
-                  ref={circleRef}
+                  ref={circleDesktopRef}
                   cx="18"
                   cy="18"
                   r="16"
                   fill="none"
-                  className="stroke-current text-primaryGreen"
+                  className="stroke-current text-primaryGreen CircleClass"
                   strokeWidth="2"
                   strokeDasharray="100"
                   strokeDashoffset="100"
@@ -99,10 +194,10 @@ const WhyChooseUsHome = () => {
             </p>
           </div>
         </div>
-        <div id="whyChooseUsRightPart" className="w-1/2 text-white px-20 py-20">
+        <div id="whyChooseUsRightPart" className="lg:w-1/2 w-full text-white px-4  lg:px-20 py-20">
           <div className="space-y-10">
             {whyChooseUsData.map((item ,index) => (
-              <div className="flex justify-end">
+              <div ref={(el)=>cardsRef.current[index] = el}  className="flex lg:justify-end whyChooseUsCard">
                 <svg viewBox="0 0 100 40" className="w-[100px] h-[40px]">
                   <text
                     x="50"
@@ -117,7 +212,7 @@ const WhyChooseUsHome = () => {
                     {'0'+ (index+1).toString()}
                   </text>
                 </svg>
-                <div className="w-1/2">
+                <div className="lg:w-1/2 ">
                   <img
                     src={item.imgSrc}
                     alt="clinic image"

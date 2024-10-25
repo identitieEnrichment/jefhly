@@ -1,6 +1,7 @@
 import React from 'react'
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { IoMdMenu } from "react-icons/io";
 
 // Register the plugin
 gsap.registerPlugin(ScrollToPlugin);
@@ -21,12 +22,15 @@ const Header = () => {
   };
 
   return (
-    <div className='px-16 py-6 fixed top-0 w-full shadow-xl bg-primaryGreen z-[1000]'>
-      <div className='flex justify-between items-center'>
-        <div className='text-3xl font-semibold text-white'>
-          JEFHLY
+    <div className='lg:px-16 px-2 flex     items-center  h-[4rem] lg:h-[5.8rem] fixed top-0 w-full shadow-xl bg-primaryGreen z-[1000]'>
+      <div className='flex justify-between items-center w-full'>
+        <div className=' size-20 lg:size-28 font-semibold text-white'>
+          <img className=' object-contain  h-full w-full ' src="../../images/logoWhite.png" alt="" />
         </div>
-        <div className='flex space-x-4 text-sm'>
+        <div className='text-white text-4xl lg:hidden'>
+            <IoMdMenu />
+        </div>
+        <div className=' space-x-4 text-sm hidden lg:flex'>
           <div 
             onClick={() => scrollToSection("AppoinMentSection")} 
             className='px-3 py-2 bg-[#E7F0EF] hover:bg-white cursor-pointer rounded-full'

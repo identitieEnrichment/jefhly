@@ -6,6 +6,7 @@ import Home from './Pages/Home.jsx';
 import AboutUs from './Pages/AboutUs.jsx';
 import Services from './Pages/Services.jsx';
 import NotFound from './Pages/NotFound.jsx';
+import ContactUs from './Pages/ContactUs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path:'/services',
         element:<Services />
+      },
+      {
+        path:'/contact',
+        element:<ContactUs />
       },
     ],
     errorElement:<NotFound />
