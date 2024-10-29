@@ -104,7 +104,7 @@ const WhyChooseUsHome = () => {
             <div className="relative size-28 overflow-hidden flex justify-center items-center">
               <img
                 className="absolute size-12 object-contain max-h-full z-50"
-                src="../images/logo.png"
+                src="../ToOptimize/logo.png"
                 alt=""
               />
 
@@ -150,7 +150,7 @@ const WhyChooseUsHome = () => {
             <div className="relative size- overflow-hidden flex justify-center items-center">
               <img
                 className="absolute size-20 object-contain max-h-full z-50"
-                src="../images/logo.png"
+                src="../ToOptimize/logo.png"
                 alt=""
               />
 

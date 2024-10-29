@@ -6,7 +6,7 @@ const Footer = () => {
       <div className=" lg:flex justify-between lg:px-20 w-full  ">
         <div className="mb-8 md:mb-0  ">
           <img
-            src="../images/logoWhite.png"
+            src="../ToOptimize/logoWhite.png"
             alt="Company Logo"
             className="w-32 mb-4 text-white"
           />

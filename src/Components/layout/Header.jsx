@@ -31,7 +31,7 @@ const Header = () => {
         <Link to={"/"} className=" size-20 lg:size-28 font-semibold text-white">
           <img
             className=" object-contain  h-full w-full "
-            src="../../images/logoWhite.png"
+            src="../../ToOptimize/logoWhite.png"
             alt=""
           />
         </Link>
@@ -82,7 +82,7 @@ const Header = () => {
           <div class="bg-[#084D44] min-h-[100px] max-h-[100px] py-5 flex justify-between items-center px-4 ">
             <div class="space-y-2 whitespace-nowrap ">
               <div href="" class="px-3 flex items-center space-x-1 text-white">
-                <img class="h-6" src="../images/logoWhite.png" alt="" />
+                <img class="h-6" src="../ToOptimize/logoWhite.png" alt="" />
               </div>
               <p class="px-3 text-white text-xs whitespace-nowrap">
                 Your Smile, Our Priority..{" "}
@@ -99,23 +99,22 @@ const Header = () => {
             <div>
               <div
                onClick={() => {setIsSideBarOpen(false) ;scrollToSection("AppoinMentSection");}}
-                class="whitespace-nowrap flex text-white   items-center space-x-5 px-2 py-3 border-b-[.2px] hover:text-black border-b-[#666666] hover:bg-gray-100 rounded-t-sm"
+                class="whitespace-nowrap flex text-white    items-center space-x-5 px-6 py-3 border-b-[.2px] hover:text-black border-b-[#666666] hover:bg-gray-100 rounded-t-sm"
               >
-                <img class="h-4" src="/images/user blue filled.png" alt="" />
+
                 <p class="text-sm">Book An Appointment</p>
               </div>
               <div
               onClick={() => {setIsSideBarOpen(false) ;scrollToSection("OurServices")} }
-                class="whitespace-nowrap flex text-white  items-center space-x-5 px-2 py-3 border-b-[.2px] hover:text-black border-b-[#666666] hover:bg-gray-100 rounded-t-sm"
+                class="whitespace-nowrap flex text-white  items-center space-x-5 px-6 py-3 border-b-[.2px] hover:text-black border-b-[#666666] hover:bg-gray-100 rounded-t-sm"
               >
-                <img class="h-4" src="/images/user blue filled.png" alt="" />
+
                 <p class="text-sm">Our Services</p>
               </div>
               <Link
               to={'/contact'}
-                class="whitespace-nowrap flex  items-center space-x-5 px-2 py-3 border-b-[.2px] hover:text-black border-b-[#666666] hover:bg-gray-100 rounded-t-sm"
+                class="whitespace-nowrap flex  items-center space-x-5 px-6 py-3 border-b-[.2px] hover:text-black border-b-[#666666] hover:bg-gray-100 rounded-t-sm"
               >
-                <img class="h-4" src="/images/user blue filled.png" alt="" />
                 <p class="text-sm text-white">Contact Us</p>
               </Link>
             </div>
