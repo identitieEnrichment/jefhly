@@ -1,4 +1,17 @@
 import React from "react";
+import { IoMdHome } from "react-icons/io";
+import { RxSlash } from "react-icons/rx";
+import { PiLineVerticalBold } from "react-icons/pi";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaMobileAlt } from "react-icons/fa";
+import { FiMessageCircle } from "react-icons/fi";
+import { CiBasketball } from "react-icons/ci";
+import { FaFacebook } from "react-icons/fa6";
+import { LuInstagram } from "react-icons/lu";
+import { FaLinkedinIn } from "react-icons/fa";
+import { CgMail } from "react-icons/cg";
+import { FaPhoneFlip } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
 
 
 const ContactUs = () => {
@@ -120,6 +133,7 @@ const ContactUs = () => {
 			</div>
 		</div>
 	);
+
 };
 
 export default ContactUs;
