@@ -35,7 +35,6 @@ const WhyChooseUsHome = () => {
         trigger: container,
         start: "top top%", // Trigger animation when the container is slightly in view
         end: "bottom top", 
-        markers:true,// End as container scrolls out of view
         scrub: 0.5,
       },
     });

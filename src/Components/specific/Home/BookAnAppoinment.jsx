@@ -2,7 +2,13 @@ import React from "react";
 import { IoMdArrowBack } from "react-icons/io";
 const BookAnAppointment = () => {
   return (
-    <div className="flex flex-col lg:px-20  py-10 lg:py-20 justify-center items-center  p-4 bg-white " id="AppoinMentSection">
+    <form  action="https://api.web3forms.com/submit" method="POST" className="flex flex-col lg:px-20  py-10 lg:py-20 justify-center items-center  p-4 bg-white " id="AppoinMentSection">
+      	<input hidden name="redirect" value="/" />
+        <input
+									type="hidden"
+									name="access_key"
+									value="8d93b5a5-1058-4ed3-b037-4447a0fd6b2f"
+								/>
       <div className=" bg-white  lg:w-9/12 p-0 rounded-xl drop-shadow-xl shadow-xl border-t-[.2px] border-t-gray-200  flex flex-col lg:flex-row">
         <div className="w-full lg:w-5/12">
           <img
@@ -22,12 +28,16 @@ const BookAnAppointment = () => {
             <div className="w-full">
               <input
                 type="text"
+                name="name"
+									required
                 placeholder="Full Name"
                 className="w-full px-8 py-3 border border-gray-300 rounded-lg placeholder:text-sm"
               />
             </div>
+            <input type="text"   name="subject" value={"New Appointment"} id="" />
             <div className="w-full ">
               <input
+              name="message"
                 type="text"
                 placeholder="I'm Interested in*"
                 className="w-full px-8 py-3 border border-gray-300 rounded-lg placeholder:text-sm"
@@ -38,14 +48,17 @@ const BookAnAppointment = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="w-full">
               <input
-                type="email"
+               type="email"
+               name="email"
+
                 placeholder="Email*"
                 className="w-full px-8 py-3 border border-gray-300 rounded-lg placeholder:text-sm"
               />
             </div>
             <div className="w-full">
               <input
-                type="tel"
+              name="phone" id="phone"
+
                 placeholder="Phone Number*"
                 className="w-full px-8 py-3 border border-gray-300 rounded-lg placeholder:text-sm"
               />
@@ -63,7 +76,7 @@ const BookAnAppointment = () => {
           </div>
         </div>
       </div>
-    </div>
+    </form>
   );
 };
 
