@@ -21,15 +21,15 @@ const Home = () => {
   return (
     <div  id='HomePage' className=' bg-[#0B675A] w-full  font-poppins relative overflow-x-hidden '>
 
-      {/* <Circle />
+       <Circle />
       <HeroSection /> 
       <HomeAboutUs/>
       <WhyChooseUsHome />
       <WhatWeDo />
       <Testimonials />
       <MeetTeam />
-      <BookAnAppoinment/> */}
-      <ContactUs/>
+      <BookAnAppoinment/> 
+    
     </div>
   )
 }

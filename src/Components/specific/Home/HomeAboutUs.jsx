@@ -6,7 +6,7 @@ const HomeAboutUs = () => {
       <div class="text-white flex justify-between  ">
         <div className="lg:space-y-10 space-y-6 mt-16 flex flex-col items-center lg:items-start">
           <div className="space-y-2">
-            <h2 className="text-[#89DB7B] font-semibold w-full text-center text-sm">About Us</h2>
+            <h2 className="text-[#89DB7B] font-semibold w-full lg:text-left text-center text-sm">About Us</h2>
             <span className="lg:text-5xl text-3xl font-semibold ">Patient-Centered  Care</span>
           </div>
           
