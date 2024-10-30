@@ -36,7 +36,7 @@ const Mid = () => {
   }, []);
 
   return (
-    <div className="lg:flex grid gap-2 grid-cols-2 justify-center lg:space-x-16 lg:px-20">
+    <div className="lg:flex grid gap-2 grid-cols-2  justify-center lg:space-x-16 lg:px-20">
       {StatisticsData.map((item, index) => (
         <div className="flex flex-col lg:flex-row lg:space-x-5 items-center" key={index}>
           <div className="bg-primaryGreen w-fit p-2">

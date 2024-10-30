@@ -208,7 +208,7 @@ const WhatWeDo = () => {
   return (
     <div
       ref={containerRef}
-      className=" w-full -mt-1 bg-gradient-to-b from-[#E7F0EF] to-[#DAE8E6] py-20 "
+      className=" w-full -mt-1 bg-gradient-to-b from-[#E7F0EF] to-[#DAE8E6] py-4  lg:py-20 "
       id="OurServices"
     >
       <div>

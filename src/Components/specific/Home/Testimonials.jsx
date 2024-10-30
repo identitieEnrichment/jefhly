@@ -58,7 +58,7 @@ const Testimonials = () => {
   }, [testimonials]);
   return (
     <div className="">
-      <div className="text-white py-20">
+      <div className="text-white px-2 py-6 lg:py-20">
         <h1 className="flex justify-center text-3xl lg:text-left text-center lg:text-5xl">What our Customers Say</h1>
         <p className="flex justify-center text-gray-200 text-center lg:text-left text-sm my-2 mb-6">
           Thousands of happy customers that changed their energy use{" "}
