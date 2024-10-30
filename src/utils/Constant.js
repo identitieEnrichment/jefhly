@@ -153,18 +153,6 @@ export const sliderData = [
     image: "../images/clinic8.jpg",
     initialText: "Periodontal Care"
   },
-  {
-    title: "Oral Radiology",
-    services: [
-      "3D Imaging",
-      "Digital X-Ray",
-      "Panoramic X-Ray",
-      "CT Scans"
-    ],
-    image: "../images/clinic9.jpg",
-    initialText: "Radiology Services"
-  },
-  
 ];
 
 export const testimonialsData = [
