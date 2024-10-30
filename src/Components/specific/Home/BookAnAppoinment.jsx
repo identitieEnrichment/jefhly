@@ -34,7 +34,7 @@ const BookAnAppointment = () => {
                 className="w-full px-8 py-3 border border-gray-300 rounded-lg placeholder:text-sm"
               />
             </div>
-            <input type="text"   name="subject" value={"New Appointment"} id="" />
+            <input type="text"   name="subject" value={"New Appointment"} hidden id="" />
             <div className="w-full ">
               <input
               name="message"
