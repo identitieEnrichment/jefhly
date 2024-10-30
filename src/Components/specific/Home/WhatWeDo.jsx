@@ -144,9 +144,16 @@ const WhatWeDo = () => {
               opacity: 0,
             });
           }else{
-            gsap.set(slider,{
-              height:'4rem'
-            })
+            gsap.set(slider, {
+              height: "4rem",
+            });
+            gsap.set(slider.querySelector(".final"), {
+              opacity: 0,
+              ease: "power1.inOut",
+            });
+            gsap.set(slider.querySelector(".initial"), {
+              opacity: 1,
+            });
           }
           // Animate current slider to expand to 25%
           tl.to(slider, {
@@ -232,7 +239,7 @@ const WhatWeDo = () => {
         <div className="lg:px-20 px-2 lg:my-20 my-6 lg:flex justify-between w-full SliderContainer lg:space-y-0 space-y-2 ">
           {sliderData.map((Slider) => (
             <div className="lg:h-96  h-16  lg:w-1/12  w-full relative Slider ">
-              <div className="text-black z-50 absolute text-white lg:flex flex-col justify-end w-full h-full px-2 lg:py-4  opacity-0 final ">
+              <div className="text-black z-50 absolute text-white lg:flex flex-col justify-end w-full h-full px-2 lg:py-4   opacity-0 final ">
                 <h1 className="font-semibold text-xl my-2  lg:block flex justify-center">{Slider.title}</h1>
 
                 <div className="space-y-1  text-sm text-gray-200 lg:block flex flex-col justify-end lg:h-fit h-[70%]  items-center">
