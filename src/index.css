@@ -18,6 +18,13 @@
       top: 30%;
       animation-delay: 0.3s;
     }
+    .Slider .initial {
+      opacity: 1;
+    }
+    
+    .Slider .final {
+      opacity: 0;
+    }
 
   }
   

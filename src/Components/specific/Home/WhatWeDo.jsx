@@ -7,6 +7,12 @@ gsap.registerPlugin(ScrollToPlugin);
 const WhatWeDo = () => {
   const containerRef = useRef(null);
 
+  // useEffect(() => {
+  //   gsap.set(".Slider .final", { opacity: 0 });
+  //   gsap.timeline()
+  //     .to(".Slider .initial", { opacity: 0, duration: 1 })
+  //     .to(".Slider .final", { opacity: 1, duration: 1 }, "-=0.5"); // Overlap transition
+  // }, []);
   useEffect(() => {
     const context = gsap.context(()=>{
       const sliders = gsap.utils.toArray(".Slider");
