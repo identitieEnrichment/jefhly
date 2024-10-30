@@ -143,6 +143,10 @@ const WhatWeDo = () => {
             gsap.set(slider.querySelector(".initial"), {
               opacity: 0,
             });
+          }else{
+            gsap.set(slider,{
+              height:'4rem'
+            })
           }
           // Animate current slider to expand to 25%
           tl.to(slider, {
