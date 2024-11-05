@@ -28,7 +28,7 @@ const Footer = () => {
                   href="/categories"
                   className="text-gray-400 hover:text-white"
                 >
-                  email@email.com
+                 jefhlysmilehub@gmail.com
                 </a>
               </li>
               <li>
@@ -36,7 +36,7 @@ const Footer = () => {
                   href="/newsarrival"
                   className="text-gray-400 hover:text-white"
                 >
-                  +913838383838{" "}
+                 +91 9677630248
                 </a>
               </li>
             </ul>

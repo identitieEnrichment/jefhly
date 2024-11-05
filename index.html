@@ -1,19 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+ <link rel="apple-touch-icon" sizes="180x180" class="object-contain" href="/Favicon/faviconApple.png">
+<link rel="icon" type="image/png" sizes="32x32" class="object-contain" href="/Favicon/faviconApple.png">
+<link rel="icon" type="image/png" sizes="16x16" class="object-contain"  href="/Favicon/faviconApple.png">
+<link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <meta
+      name="description"
+      content="Jefhly Smile Hub - Premier dental clinic in Chennai offering comprehensive dental and craniofacial treatments. Visit us for quality care and exceptional dental services."
+    />
+    <meta
+      name="keywords"
+      content="Jefhly, Smile Hub, dental clinic, Chennai, dentistry, craniofacial surgery"
+    />
+    <meta
+      property="og:title"
+      content="Jefhly Smile Hub - Dental Clinic in Chennai"
+    />
+    <meta
+      property="og:description"
+      content="Jefhly Smile Hub is Chennai's premier dental clinic, offering a wide range of dental and craniofacial treatments."
+    />
+    <meta property="og:image" content="/images/jefhlyCoverImg.jpg" />
+    <meta property="og:url" content="https://www.jefhly.com/" />
+    <title>Jefhly Smile Hub - Leading Dental Clinic in Chennai</title>
+
   </head>
   <style>
     html {
-  scroll-behavior: smooth;
-}
+      scroll-behavior: smooth;
+    }
   </style>
   <body>
     <div id="root"></div>
-    
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Jefhly Smile Hub",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chennai",
+          "addressRegion": "TN",
+          "addressCountry": "India"
+        },
+        "description": "Premier dental clinic in Chennai offering top-notch dental and craniofacial treatments."
+      }
+      </script>
+      
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
