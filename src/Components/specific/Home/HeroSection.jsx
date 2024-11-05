@@ -41,9 +41,12 @@ const HeroSection = () => {
           </div>
 
           <p className="opacity-70 max-w-xl mt-5 lg:mt-10">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient.
+            Welcome to Jefhly Smile Hub, your trusted destination for
+            comprehensive dental care. Our clinic is designed to provide a
+            relaxing and welcoming environment where patients of all ages can
+            receive high-quality dental treatment. We pride ourselves on our
+            patient-centered approach, ensuring each individual feels
+            comfortable and informed throughout their dental care journey.
           </p>
           <div className="mt-12 flex  lg:space-x-10 space-x-4 text-sm lg:text-base">
             <div className="flex flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
@@ -51,7 +54,9 @@ const HeroSection = () => {
                 {" "}
                 <BiSupport className="text-white opacity-100" />
               </div>
-              <p className="font-medium lg:whitespace-normal text-center  ">Call Support</p>
+              <p className="font-medium lg:whitespace-normal text-center  ">
+                Call Support
+              </p>
             </div>
 
             <div className="flex flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
@@ -59,7 +64,9 @@ const HeroSection = () => {
                 {" "}
                 <MdOutlineCalendarMonth className="text-white opacity-100" />
               </div>
-              <p className="font-medium lg:whitespace-normal text-center  ">Flexible Appointments</p>
+              <p className="font-medium lg:whitespace-normal text-center  ">
+                Flexible Appointments
+              </p>
             </div>
 
             <div className="flex flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
@@ -67,16 +74,10 @@ const HeroSection = () => {
                 {" "}
                 <TbReportAnalytics className="text-white opacity-100" />
               </div>
-              <p className="font-medium lg:whitespace-normal text-center ">Detailed Report</p>
+              <p className="font-medium lg:whitespace-normal text-center ">
+                Detailed Report
+              </p>
             </div>
-
-
-
-
-
-
-
-            
           </div>
           <button
             onClick={scrollToSection}

@@ -250,7 +250,7 @@ const WhatWeDo = () => {
               </div>
               <div className=" absolute inset-0 w-full  h-full flex lg:py-16 flex-col  items-center lg:items-stretch   justify-center lg:justify-end rounded-xl initial opacity-100">
                 <h2 className=" text-white z-50    whitespace-nowrap  font-bold text-xl lg:-rotate-90 ">
-                  {Slider.initialText}
+                  {Slider.title}
                 </h2>
               </div>
 

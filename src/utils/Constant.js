@@ -6,34 +6,80 @@ export const teamMembers = [
   {
     name: 'DR.JEFHLY',
     title: 'Chief Dental Surgeon',
-    imgSrc: '../images/avatar1.jpg',
-  },
-  {
-    name: 'DR.BENIN',
-    title: 'General Physician',
-    imgSrc: '../images/avatat2.jpg',
-  },
-  {
-    name: 'DR.AISWARYA',
-    title: 'Oral And Maxillofacial Surgeon And Implantologist',
-    imgSrc: '../images/avatar3.jpg',
+    imgSrc: '../images/femaleDoctor.png',
   },
   {
     name: 'DR.AASHIQUE',
     title: 'Prosthodontist',
-    imgSrc: '../images/avatar4.jpg',
+    imgSrc: '../images/maleDoctor.png',
+  },
+  {
+    name: 'DR.PRAVEEN',
+    title: 'Oral and Maxillofacial Surgeon',
+    imgSrc: '../images/maleDoctor.png',
+  },
+  {
+    name: 'DR.HARISH',
+    title: 'Pedodontist',
+    imgSrc: '../images/maleDoctor.png',
+  },
+  {
+    name: 'DR.ISHWARIYA',
+    title: 'Oral and Maxillofacial Surgeon and Implantologist',
+    imgSrc: '../images/femaleDoctor.png',
+  },
+  {
+    name: 'DR.MURALI',
+    title: 'Prosthodontist',
+    imgSrc: '../images/maleDoctor.png',
+  },
+  {
+    name: 'DR.BENIN',
+    title: 'General Physician',
+    imgSrc: '../images/maleDoctor.png',
   },
   {
     name: 'DR.RAMEEEZ',
     title: 'Endodontist',
-    imgSrc: '../images/avatar5.jpg',
+    imgSrc: '../images/maleDoctor.png',
   },
+  {
+    name: 'DR.SOWMYA',
+    title: 'Orthodontist',
+    imgSrc: '../images/femaleDoctor.png',
+  },
+  {
+    name: 'DR.MITUL',
+    title: 'Pedodontist',
+    imgSrc: '../images/maleDoctor.png',
+  },
+  {
+    name: 'DR.PRATHIBA',
+    title: 'General Dentist',
+    imgSrc: '../images/femaleDoctor.png',
+  },
+ 
   {
     name: 'DR.NOBLIN',
     title: 'Periodontist',
-    imgSrc: '../images/avatar6.jpg',
+    imgSrc: '../images/maleDoctor.png',
   },
-];
+  {
+    name: 'DR.DURGA',
+    title: 'Orthodontist',
+    imgSrc: '../images/femaleDoctor.png',
+  },
+  {
+    name: 'DR.SANJANA',
+    title: 'Endodontist',
+    imgSrc: '../images/femaleDoctor.png',
+  },
+  {
+    name: 'DR.RAMA',
+    title: 'General Dentist',
+    imgSrc: '../images/femaleDoctor.png',
+  },
+]
 export const whyChooseUsData = [
   {
     title: "STATE-OF-THE-ART FACILITIES",
@@ -83,17 +129,20 @@ export const sliderData = [
   },
   {
     title: "Orthodontics",
-    services: ["Braces", "Aligners", "Retainers"],
+    services: ["Traditional Braces", "Invisalign", "Retainers","Space Maintainers", "Early Orthodontic Treatment"],
     image: "../images/clinic2.jpg",
     initialText: "Orthodontics"
   },
   {
     title: "Pediatric Dentistry",
     services: [
-      "Child Oral Care",
+      "Child's First Dental Visit",
+      "Fluoride Treatments",
       "Dental Sealants",
-      "Fluoride Treatment",
-      "Cavity Prevention"
+      "Behavior Management",
+      "Habit Counseling (thumb sucking, pacifier use)",
+      "Crowns",
+      "Pulpectomy"
     ],
     image: "../images/clinic3.jpg",
     initialText: "Pediatric Care"
@@ -110,12 +159,13 @@ export const sliderData = [
     initialText: "Cosmetic Solutions"
   },
   {
-    title: "Oral Surgery",
+    title: "RESTORATIVE DENTISTRY",
     services: [
-      "Wisdom Tooth Extraction",
       "Dental Implants",
-      "Gum Surgery",
-      "Bone Grafting"
+      "Crowns and Bridges",
+      "Dentures (Full and Partial)",
+      "Root Canal Therapy",
+      "Inlays and Onlays"
     ],
     image: "../images/clinic5.jpg",
     initialText: "Surgical Procedures"
@@ -123,21 +173,22 @@ export const sliderData = [
   {
     title: "Prosthodontics",
     services: [
-      "Crowns and Bridges",
-      "Full Dentures",
-      "Partial Dentures",
-      "Dental Implants"
+      "Full Mouth Rehabilitation",
+      "Custom Dentures",
+      "TMJ/TMD Treatment",
+      "Implant-Supported Prosthetics"
     ],
     image: "../images/clinic6.jpg",
     initialText: "Prosthodontics"
   },
   {
-    title: "Endodontics",
+    title: "EMERGENCY DENTAL CARE",
     services: [
-      "Root Canal Treatment",
-      "Retreatment",
-      "Pulp Therapy",
-      "Apexification"
+      " Immediate Pain Relief",
+      "Treatment of Dental Trauma",
+      "Management of Infections",
+      "Repair of Broken Teeth",
+      "Same-Day Appointments"
     ],
     image: "../images/clinic7.jpg",
     initialText: "Endodontics"
@@ -224,7 +275,7 @@ export const  StatisticsData = [
   {
     title:'Doctors&Staff',
     icon : FaUserDoctor,
-    count: 70
+    count: 18
   },
   {
     title:'Online Appointment&Staff',

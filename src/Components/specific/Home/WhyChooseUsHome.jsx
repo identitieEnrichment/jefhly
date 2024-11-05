@@ -34,22 +34,26 @@ const WhyChooseUsHome = () => {
       scrollTrigger: {
         trigger: container,
         start: "top top%", // Trigger animation when the container is slightly in view
-        end: "bottom top", 
+        end: "bottom top",
         scrub: 0.5,
       },
     });
-    if(window.innerWidth < 1024){
-      const mobileCircleTrigger = ScrollTrigger.create({
+    if (window.innerWidth < 1024) {
+      var mobileCircleTrigger = ScrollTrigger.create({
         trigger: container,
         start: "top center", // When WhyChooseUsHome enters the viewport
         end: "bottom bottom", // When WhyChooseUsHome leaves the viewport
-        onEnter: () => gsap.to('.MobileCircle', { opacity: 1, display: 'block' }), // Show MobileCircle
-        onLeave: () => gsap.to('.MobileCircle', { opacity: 0, display: 'none' }), // Hide MobileCircle
-        onEnterBack: () => gsap.to('.MobileCircle', { opacity: 1, display: 'block' }), // Show MobileCircle when scrolling back up
-        onLeaveBack: () => gsap.to('.MobileCircle', { opacity: 0, display: 'none' }), // Hide MobileCircle when scrolling back up
+        onEnter: () =>
+          gsap.to(".MobileCircle", { opacity: 1, display: "block" }), // Show MobileCircle
+        onLeave: () =>
+          gsap.to(".MobileCircle", { opacity: 0, display: "none" }), // Hide MobileCircle
+        onEnterBack: () =>
+          gsap.to(".MobileCircle", { opacity: 1, display: "block" }), // Show MobileCircle when scrolling back up
+        onLeaveBack: () =>
+          gsap.to(".MobileCircle", { opacity: 0, display: "none" }), // Hide MobileCircle when scrolling back up
       });
     }
-    
+
     // Animate both desktop and mobile circles
     const animateCircle = (circle) => {
       gsap.to(circle, {
@@ -65,8 +69,7 @@ const WhyChooseUsHome = () => {
     cardsRef.current.forEach((card, index) => {
       gsap.from(
         card,
-        { opacity: 0, y: 50 
-        },
+        { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
@@ -84,14 +87,13 @@ const WhyChooseUsHome = () => {
       );
     });
 
-
     // Apply the same animation to both circles
     if (circleDesktop) animateCircle(circleDesktop);
     if (circleMobile) animateCircle(circleMobile);
 
     return () => {
       scrollTriggerDesktop.kill();
-      mobileCircleTrigger.kill(); // Cleanup mobile scroll trigger
+      mobileCircleTrigger?.kill(); // Cleanup mobile scroll trigger
     };
   }, []);
   return (
@@ -100,47 +102,46 @@ const WhyChooseUsHome = () => {
       id="whyChooseUsContainer"
       className=" w-full h-fit   relative "
     >
-        <div className="fixed bottom-3 right-3 hidden  z-50 MobileCircle  lg:hidden">
-            <div className="relative size-28 overflow-hidden flex justify-center items-center">
-              <img
-                className="absolute size-12 object-contain max-h-full z-50"
-                src="../ToOptimize/logo.png"
-                alt=""
-              />
+      <div className="fixed bottom-3 right-3 hidden  z-50 MobileCircle  lg:hidden">
+        <div className="relative size-28 overflow-hidden flex justify-center items-center">
+          <img
+            className="absolute size-12 object-contain max-h-full z-50"
+            src="../ToOptimize/logo.png"
+            alt=""
+          />
 
-              <svg
-                className="size-full -rotate-90"
-                viewBox="0 0 36 36"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="18"
-                  cy="18"
-                  r="16"
-                  fill="#E7F0EF"
-                  className="stroke-current text-gray-300"
-                  strokeWidth="2"
-                ></circle>
-                <circle
-                  ref={circleMobileRef}
-                  cx="18"
-                  cy="18"
-                  r="16"
-                  fill="none"
-                  className="stroke-current text-primaryGreen CircleClass"
-                  strokeWidth="2"
-                  strokeDasharray="100"
-                  strokeDashoffset="100"
-                  strokeLinecap="round"
-                ></circle>
-              </svg>
-            </div>
-          </div>
+          <svg
+            className="size-full -rotate-90"
+            viewBox="0 0 36 36"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="18"
+              cy="18"
+              r="16"
+              fill="#E7F0EF"
+              className="stroke-current text-gray-300"
+              strokeWidth="2"
+            ></circle>
+            <circle
+              ref={circleMobileRef}
+              cx="18"
+              cy="18"
+              r="16"
+              fill="none"
+              className="stroke-current text-primaryGreen CircleClass"
+              strokeWidth="2"
+              strokeDasharray="100"
+              strokeDashoffset="100"
+              strokeLinecap="round"
+            ></circle>
+          </svg>
+        </div>
+      </div>
       <h1 className="text-3xl text-secondaryOrange flex justify-center px-4 lg:hidden  text-center font-bold">
-              Why Choose us for your smile
-            </h1>
+        Why Choose us for your smile
+      </h1>
       <div className="flex w-full h-full relative">
-        
         <div
           ref={leftPartRef}
           id="whyChooseUsLeftPart"
@@ -187,16 +188,26 @@ const WhyChooseUsHome = () => {
               Why Choose us for your smile
             </h1>
             <p className="text-[#333333]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-              imperdiet sed id elementum. Quam vel aliquam sit vulputate.
-              Faucibus nec gravida ipsum pulvinar vel.
+              At Jefhly Smile Hub, our mission is to deliver comprehensive
+              dental care in a compassionate, patient-focused manner. We are
+              committed to helping our patients achieve optimal oral health
+              through advanced technology, continuous education, and
+              personalized treatment plans. We aim to create lifelong
+              relationships with our patients, ensuring they feel valued and
+              confident in their dental health.
             </p>
           </div>
         </div>
-        <div id="whyChooseUsRightPart" className="lg:w-1/2 w-full text-white px-4  lg:px-20 py-20">
+        <div
+          id="whyChooseUsRightPart"
+          className="lg:w-1/2 w-full text-white px-4  lg:px-20 py-20"
+        >
           <div className="space-y-10">
-            {whyChooseUsData.map((item ,index) => (
-              <div ref={(el)=>cardsRef.current[index] = el}  className="flex lg:justify-end whyChooseUsCard">
+            {whyChooseUsData.map((item, index) => (
+              <div
+                ref={(el) => (cardsRef.current[index] = el)}
+                className="flex lg:justify-end whyChooseUsCard"
+              >
                 <svg viewBox="0 0 100 40" className="w-[100px] h-[40px]">
                   <text
                     x="50"
@@ -208,7 +219,7 @@ const WhyChooseUsHome = () => {
                     strokeWidth="1"
                     fontFamily="sans-serif"
                   >
-                    {'0'+ (index+1).toString()}
+                    {"0" + (index + 1).toString()}
                   </text>
                 </svg>
                 <div className="lg:w-1/2 ">
@@ -217,17 +228,11 @@ const WhyChooseUsHome = () => {
                     alt="clinic image"
                     className="h-48 w-full rounded-2xl object-cover"
                   />
-                  <h3 className="font-semibold my-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-[#E9E9E9]">
-                    {item.description}
-                  </p>
+                  <h3 className="font-semibold my-2">{item.title}</h3>
+                  <p className="text-sm text-[#E9E9E9]">{item.description}</p>
                 </div>
               </div>
             ))}
-
-          
           </div>
         </div>
       </div>

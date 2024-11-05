@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-[#073E36] text-white py-8 px-4 lg:px-0">
-      <div className=" lg:flex justify-between lg:px-20 w-full  ">
+      <div className=" lg:flex   justify-between lg:px-20 w-full  ">
         <div className="mb-8 md:mb-0  ">
           <img
             src="../ToOptimize/logoWhite.png"
@@ -19,7 +19,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="lg:flex grid grid-cols-2 lg:space-x-20 ">
+        <div className="lg:flex grid grid-cols-2 gap-x-20 gap-y-2 lg:space-x-20 ">
           <div>
             <h4 className="font-bold mb-2">Get in touch </h4>
             <ul className="space-y-2">

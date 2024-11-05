@@ -41,7 +41,7 @@ const MeetTeam = () => {
         {teamMembers.map((teamMember) => (
           <div className="rounded-md bg-[#E7F0EF] h-64 w-full lg:min-w-96 flex flex-col items-center justify-center space-y-3 Card ">
             <img
-              className=" size-28 rounded-full object-cover "
+              className=" size-28  rounded-full object-contain "
               src={teamMember.imgSrc}
             ></img>
             <h2 className="font-semibold">{teamMember.name}</h2>
