@@ -25,13 +25,13 @@ const Header = () => {
 
   return (
     <div
-      className={`lg:px-16 px-2 flex     items-center  h-[4rem] lg:h-[5.8rem] fixed top-0 w-full shadow-xl bg-primaryGreen z-[1000]`}
+      className={`lg:px-16 px-2 flex     items-center  h-[4rem] lg:h-[5.8rem] fixed top-0 w-full shadow-xl bg-[#2a7668] z-[1000]`}
     >
       <div className="flex justify-between items-center w-full">
         <Link to={"/"} className=" size-20 lg:size-28 font-semibold text-white">
           <img
             className=" object-contain  h-full w-full "
-            src="../../ToOptimize/logoWhite.png"
+            src="../../images/optimized/jefhlyGif.gif"
             alt=""
           />
         </Link>

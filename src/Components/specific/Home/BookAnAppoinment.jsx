@@ -67,7 +67,7 @@ const BookAnAppointment = () => {
 
           <div className="mt-10 text-center">
           <button className="rounded-full text-sm lg:text-base w-full text-center  justify-center  group hover:bg-[#e2842e] hover:text-gray-100  bg-secondaryOrange px-6 py-3 font-semibold text-white opacity-100 flex items-center space-x-2">
-                <span>Get a Free Consultation</span>
+                <span>Get a  Consultation</span>
                 <div className=" rotate-180 group-hover:rotate-90 transition-all duration-75 ">
                   <IoMdArrowBack className="text-xl font-bold  rotate-45"/>
                 </div>
