@@ -271,7 +271,7 @@ export const  StatisticsData = [
   {
     title:'Year Experience',
     icon : GiHospital,
-    count: 15
+    count: 8
   },
   {
     title:'Doctors&Staff',
