@@ -25,6 +25,7 @@ const HeroSection = () => {
       <div className="lg:flex items-center justify-between ">
         <div className="size-48 flex justify-center z-50 lg:hidden  w-full">
           <img className="size-28" src="../images/BiggTooth.png"></img>
+        
         </div>
         <div className="flex flex-col lg:block items-center justify-center lg:text-left text-center z-50">
           <div className="lg:text-7xl text-5xl   font-semibold">
@@ -88,6 +89,7 @@ const HeroSection = () => {
         </div>
         <div className="size-[30rem] z-50 hidden lg:block">
           <img src="../images/BiggTooth.png"></img>
+           
         </div>
       </div>
     </div>

@@ -2,27 +2,27 @@ import React, { useEffect } from "react";
 import { teamMembers } from "../../../utils/Constant.js";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import FlipCardComponent from "./FlipCardComponent.jsx";
 
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 const MeetTeam = () => {
   useEffect(() => {
-    // GSAP animation triggered by scroll
     gsap.fromTo(
       ".Card",
       {
         opacity: 0,
-        y: 50, // Optional: slide in from 50px below
+        y: 50, 
       },
       {
         opacity: 1,
-        y: 0, // Slide back to original position
+        y: 0, 
         duration: 1,
-        stagger: 0.3, // Delay between each card animation
+        stagger: 0.3, 
         scrollTrigger: {
-          trigger: ".MeetTeamContainer", // Trigger when the container comes into view
-          start: "top 80%", // Start animation when container is 80% from the top of viewport
-          toggleActions: "play none none none", // Play the animation only when scrolling into view
+          trigger: ".MeetTeamContainer", 
+          start: "top 80%", 
+          toggleActions: "play none none none", 
         },
       }
     );
@@ -37,7 +37,7 @@ const MeetTeam = () => {
       <div>
         <h1 className="text-2xl text-white my-4">Meet Our Team</h1>
       </div>
-      <div className="grid lg:grid-cols-3 gap-4 grid-cols-2 lg:gap-x-14 lg:gap-y-7   ">
+      {/* <div className="grid lg:grid-cols-3 gap-4 grid-cols-2 lg:gap-x-14 lg:gap-y-7   ">
         {teamMembers.map((teamMember) => (
           <div className="rounded-md bg-[#E7F0EF] h-64 w-full lg:min-w-96 flex flex-col items-center justify-center space-y-3 Card ">
             <img
@@ -48,7 +48,8 @@ const MeetTeam = () => {
             <p className="text-sm text-center">{teamMember.title}</p>
           </div>
         ))}
-      </div>
+      </div> */}
+      <FlipCardComponent />
     </div>
   );
 };

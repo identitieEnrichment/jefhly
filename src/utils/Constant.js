@@ -9,6 +9,11 @@ export const teamMembers = [
     imgSrc: '../images/femaleDoctor.png',
   },
   {
+    name: 'DR.BENIN',
+    title: 'General Physician',
+    imgSrc: '../images/maleDoctor.png',
+  },
+  {
     name: 'DR.AASHIQUE',
     title: 'Prosthodontist',
     imgSrc: '../images/maleDoctor.png',
@@ -33,11 +38,7 @@ export const teamMembers = [
     title: 'Prosthodontist',
     imgSrc: '../images/maleDoctor.png',
   },
-  {
-    name: 'DR.BENIN',
-    title: 'General Physician',
-    imgSrc: '../images/maleDoctor.png',
-  },
+
   {
     name: 'DR.RAMEEEZ',
     title: 'Endodontist',
