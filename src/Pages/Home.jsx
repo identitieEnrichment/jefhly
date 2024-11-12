@@ -31,7 +31,7 @@ const Home = () => {
       <Testimonials />
       <MeetTeam />
       <BookAnAppoinment/> 
-      <a target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" href={`https://wa.me/+919677630248?text=${encodeURIComponent('Hello, I would like to schedule an appointment   ')}`} className='fixed bottom-4 left-5  lg:bottom-10 lg:right-10 z-[1000] size-14 lg:size-20 object-contain'>
+      <a target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" href={`https://wa.me/+919677630248?text=${encodeURIComponent('Hello, I would like to schedule an appointment   ')}`} className='fixed bottom-4 left-5 lg:left-auto  lg:bottom-10 lg:right-10 z-[1000] size-14 lg:size-20 object-contain'>
         <img alt="Chat on WhatsApp" src="../images/whatsap.png" />
       </a>
       {/* <FlipCardComponent /> */}
