@@ -28,13 +28,13 @@ const Header = () => {
       className={`lg:px-16 px-2 flex     items-center  h-[4rem] lg:h-[5.8rem] fixed top-0 w-full shadow-xl bg-[#2a7668] z-[1000]`}
     >
       <div className="flex justify-between items-center w-full">
-        <Link to={"/"} className=" size-20 lg:size-28 font-semibold text-white">
+        <a href={"/"} className=" size-20 lg:size-28 font-semibold text-white">
           <img
             className=" object-contain  h-full w-full "
             src="../../images/optimized/jefhlyGif.gif"
             alt=""
           />
-        </Link>
+        </a>
         <div
           className="text-white text-4xl lg:hidden"
           onClick={() => setIsSideBarOpen(true)}

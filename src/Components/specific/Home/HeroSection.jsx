@@ -20,6 +20,19 @@ const HeroSection = () => {
       });
     }
   };
+
+  const scrollToSection2 = (to) => {
+    setTimeout(() => {
+      const section = document.getElementById(to);
+      if (section) {
+        gsap.to(window, {
+          scrollTo: { y: section, offsetY: 100 }, // Scroll to section with offset
+          duration: 0.5,
+          ease: "power2.inOut",
+        });
+      }
+    }, 100);
+  };
   return (
     <div className="lg:h-screen bg-[#0B675A] w-full flex flex-col pt-28 lg:pt-0  mt-6 justify-center text-white px-4 lg:px-20  ">
       <div className="lg:flex items-center justify-between ">
@@ -50,7 +63,7 @@ const HeroSection = () => {
             comfortable and informed throughout their dental care journey.
           </p>
           <div className="mt-12 flex  lg:space-x-10 space-x-4 text-sm lg:text-base">
-            <div className="flex flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
+            <a href="tel:+919677630248" className="flex flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
               <div className="bg-[#458B81]  w-fit p-2 rounded-lg text-2xl">
                 {" "}
                 <BiSupport className="text-white opacity-100" />
@@ -58,9 +71,9 @@ const HeroSection = () => {
               <p className="font-medium lg:whitespace-normal text-center  ">
                 Call Support
               </p>
-            </div>
+            </a>
 
-            <div className="flex flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
+            <div onClick={()=>scrollToSection2('AppoinMentSection')} className="flex cursor-pointer flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
               <div className="bg-[#458B81]  w-fit p-2 rounded-lg text-2xl">
                 {" "}
                 <MdOutlineCalendarMonth className="text-white opacity-100" />

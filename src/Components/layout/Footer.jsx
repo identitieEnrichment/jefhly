@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { Link } from "react-router-dom";
+// Register the plugin
+gsap.registerPlugin(ScrollToPlugin);
 
 const Footer = () => {
+  const scrollToSection = (to) => {
+    setTimeout(() => {
+      const section = document.getElementById(to);
+      if (section) {
+        gsap.to(window, {
+          scrollTo: { y: section, offsetY: 100 }, // Scroll to section with offset
+          duration: 0.5,
+          ease: "power2.inOut",
+        });
+      }
+    }, 100);
+  };
   return (
     <footer className="bg-[#073E36] text-white py-8 px-4 lg:px-0">
       <div className=" lg:flex   justify-between lg:px-20 w-full  ">
@@ -45,20 +62,20 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-2">Quick Links </h4>
             <ul className="space-y-2">
-              <li>
-                <a href="/" className="text-gray-400 hover:text-white">
+              <li onClick={()=>scrollToSection('AppoinMentSection')}>
+                <div  className="text-gray-400 hover:text-white">
                   Appointment
-                </a>
+                </div>
               </li>
-              <li>
-                <a href="/contact" className="text-gray-400 hover:text-white">
+              <Link to={'/contact'}>
+                <div  className="text-gray-400 hover:text-white">
                   Contact Us{" "}
-                </a>
-              </li>
-              <li>
-                <a href="/" className="text-gray-400 hover:text-white">
+                </div>
+              </Link>
+              <li onClick={()=>scrollToSection('OurServices')}>
+                <div className="text-gray-400 hover:text-white">
                   Services{" "}
-                </a>
+                </div>
               </li>
             </ul>
           </div>
