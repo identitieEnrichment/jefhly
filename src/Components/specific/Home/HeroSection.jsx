@@ -63,7 +63,7 @@ const HeroSection = () => {
             comfortable and informed throughout their dental care journey.
           </p>
           <div className="mt-12 flex  lg:space-x-10 space-x-4 text-sm lg:text-base">
-            <a href="tel:+919677630248" className="flex flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
+            <a href="tel:+919677630248" className="flex z-40 flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
               <div className="bg-[#458B81]  w-fit p-2 rounded-lg text-2xl">
                 {" "}
                 <BiSupport className="text-white opacity-100" />
@@ -73,7 +73,7 @@ const HeroSection = () => {
               </p>
             </a>
 
-            <div onClick={()=>scrollToSection2('AppoinMentSection')} className="flex cursor-pointer flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
+            <div onClick={()=>scrollToSection2('AppoinMentSection')} className="flex z-40 cursor-pointer flex-col lg:flex-row lg:space-y-0 space-y-2 justify-center  items-center space-x-2 ">
               <div className="bg-[#458B81]  w-fit p-2 rounded-lg text-2xl">
                 {" "}
                 <MdOutlineCalendarMonth className="text-white opacity-100" />
